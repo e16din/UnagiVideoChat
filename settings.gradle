@@ -1,0 +1,2 @@
+rootProject.name='UnagiVideoChat'
+include ':app'

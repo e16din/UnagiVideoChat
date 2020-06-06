@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.rooms.RoomsActivity">
+
+    <!-- Найти комнату -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/vSearchField"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Введите название услуги или ведомства"
+                android:imeOptions="actionSearch"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/vSearchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:backgroundTint="@color/colorAccent"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_search_24dp" />
+
+        <ImageButton
+            android:id="@+id/vClearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:backgroundTint="@color/colorAccent"
+            android:padding="12dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_clear_24dp" />
+
+    </LinearLayout>
+
+
+    <!-- Список комнат -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vRoomsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Общаться -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:id="@+id/vBeginButton"
+        android:text="Общаться" />
+
+
+</LinearLayout>

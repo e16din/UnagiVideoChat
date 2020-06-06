@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.roulettechat.RouletteChatActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="left"
+            android:background="@color/colorPrimary" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="right"
+            android:background="@color/cardview_dark_background" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+        <View
+            android:layout_width="280dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="280dp"
+            android:background="@color/design_default_color_secondary_variant" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Александр Кундрюков" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/design_default_color_surface"
+                android:text="Android разработчик в команде Унаги"/>
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+    <!-- Название Экрана -->
+    <!-- Блок с видео-чатом-->
+    <!-- Предыдущий чат -->
+    <!-- Следующий чат -->
+    <!-- Имя пользователя-->
+    <!-- Должность пользователя-->
+    <!-- Отметки по квестам -->
+    <!-- Квест -->
+
+</LinearLayout>
